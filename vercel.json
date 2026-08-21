@@ -8,20 +8,12 @@
     {
       "source": "/sitemap.xml",
       "destination": "https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/seo-static?type=sitemap"
-    },
-    {
-      "source": "/",
-      "destination": "https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/site-loader"
     }
   ],
   "headers": [
     {
       "source": "/",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/html; charset=utf-8"
-        },
         {
           "key": "X-Robots-Tag",
           "value": "index, follow"
