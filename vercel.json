@@ -11,7 +11,7 @@
     },
     {
       "source": "/",
-      "destination": "https://fsaeujbldqjetfewovuy.supabase.co/storage/v1/object/public/site-recovery/final-v32.html"
+      "destination": "https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/site-loader"
     }
   ],
   "headers": [
