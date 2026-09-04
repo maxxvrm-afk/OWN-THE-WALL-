@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/",
+      "destination": "https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/site-app-v70"
+    },
+    {
       "source": "/app-v70",
       "destination": "https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/site-app-v70"
     },
