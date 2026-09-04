@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/app-v70",
+      "destination": "https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/site-app-v70"
+    },
+    {
       "source": "/robots.txt",
       "destination": "https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/seo-static?type=robots"
     },
@@ -14,33 +18,23 @@
     {
       "source": "/",
       "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "index, follow"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        {"key": "X-Robots-Tag", "value": "index, follow"},
+        {"key": "Cache-Control", "value": "public, max-age=0, must-revalidate"}
+      ]
+    },
+    {
+      "source": "/app-v70",
+      "headers": [
+        {"key": "Cache-Control", "value": "public, max-age=0, s-maxage=60, stale-while-revalidate=300"}
       ]
     },
     {
       "source": "/robots.txt",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain; charset=utf-8"
-        }
-      ]
+      "headers": [{"key": "Content-Type", "value": "text/plain; charset=utf-8"}]
     },
     {
       "source": "/sitemap.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml; charset=utf-8"
-        }
-      ]
+      "headers": [{"key": "Content-Type", "value": "application/xml; charset=utf-8"}]
     }
   ]
 }
