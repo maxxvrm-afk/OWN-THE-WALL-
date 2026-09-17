@@ -1,1 +1,1 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","cleanUrls":true,"headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"}]}]}
+{"$schema":"https://openapi.vercel.sh/vercel.json","cleanUrls":true,"rewrites":[{"source":"/api/wall-source","destination":"https://fsaeujbldqjetfewovuy.supabase.co/functions/v1/site-app-v70"}],"headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"}]}]}
